@@ -4,30 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Blog: Registrati</title>
+    <title>Il Mio Sito: Registrati</title>
+    <link rel="stylesheet"  type="text/css" href="/assets/css/style.css">
 </head>
 
-<style>
-    #menu{
-        padding-left: 0;
-    }
 
-    ul a li{
-        display: inline;
-        font-size: 30px;
-        letter-spacing: 2px;
-        margin-right: 20px;
-    }
-
-    ul a li:hover{
-        text-decoration: underline;
-    }
-
-</style>
 
 <body>
     <nav>
-        <ul id = menu style="list-style-type: none;">
+        <ul >
             <a href="index.html"><li>Home</li></a>
             <a href="contact.html"><li>Contattaci</li></a>
             <a href="join.html"><li>Registrati</li></a>
@@ -43,9 +28,9 @@
 
     <form action="">
         <label for="name">Nome: </label>
-        <input type="text" name="name" id="name"><br>
+        <input type="text" name="name" id="name" required><br>
         <label for="sur">Cognome: </label>
-        <input type="text" name="sur" id="sur"><br>
+        <input type="text" name="sur" id="sur" required><br>
         <label for="date">Data di nascita: </label>
         <input type="date" name="date" id="date"><br>
 
@@ -58,25 +43,25 @@
         <input type="password" name="pw" id="pw"><br>
         <label for="mail">Email: </label>
         <input type="email" name="mail" id="mail"><br>
-    </form>
+    
 
-    <p>Informativa sulla privacy
-        “Termini del servizio” e “Condizioni di privacy”
-        La società BLABLA desidera informarLa che il D.Lgs. 196/2003, sostitutivo della legge 675/1996,
-        prevede la tutela delle persone e di altri soggetti rispetto al trattamento dei dati personali.
-        Secondo il decreto legislativo indicato, tale trattamento sarà improntato ai principi di correttezza,
-        liceità e trasparenza e di tutela della Sua riservatezza e dei Suoi diritti.” 
-    </p>
+    <br>
+    <textarea name="comment" form="usrform" cols="80" rows="7" readonly>Informativa sulla privacy “Termini del servizio” e “Condizioni di privacy” La società BLABLA desidera informarLa che il D.Lgs. 196/2003, sostitutivo della legge 675/1996, prevede la tutela delle persone e di altri soggetti rispetto al trattamento dei dati personali. Secondo il decreto legislativo indicato, tale trattamento sarà improntato ai principi di correttezza, liceità e trasparenza e di tutela della Sua riservatezza e dei Suoi diritti.” </textarea><br>
     <input type="radio" name="rad" id="rad">
     <label for="rad">Accetto i termini</label><br>
+
+    
     <br>
-    <form>
-        <button type="submit" value="Invia">Invia modulo</button>
+
+    
+        <button type="submit"  class="btn btn-primary" value="Invia">Invia modulo</button>
+
     </form>
 
 
     <footer>
             <p>Andrea Vespa</p>
+            <p>Data consegna 26/01/2022</p>
     </footer>
 
 </body>
